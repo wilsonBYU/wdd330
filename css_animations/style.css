@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: chocolate;
+  padding: 1em 2em;
+  font-size: 2em;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  animation: myanima 3s ease-in-out infinite alternate;
+}
+
+@keyframes myanima {
+  0% {
+    font-size: 1em;
+    transform: translateX(50px) rotateX(40deg);
+  }
+
+  50% {
+    border-radius: 100%;
+    transform: translateY(50px) rotateY(40deg);
+  }
+
+  100% {
+    background-color: rgb(30, 87, 210);
+    transform: rotateZ(90deg)
+  }
+}
